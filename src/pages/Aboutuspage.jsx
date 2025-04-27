@@ -38,7 +38,7 @@ const Aboutuspage = () => {
 
     // ✅ Fetch feedback safely
     axios
-      .get(`${import.meta.env.VITE_API_URL}/api/feedbacks`)
+      .get(`${import.meta.env.VITE_API_URL}/feedbacks`)
       .then((res) => {
         // console.log("API Response:", res.data); // Debugging the response
 

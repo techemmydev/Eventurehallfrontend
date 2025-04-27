@@ -2,11 +2,11 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
 // ✅ API_URL properly switches between development and production
-const API_URL =
-  import.meta.env.MODE === "development"
-    ? import.meta.env.VITE_API_URL
-    : "/api";
-
+// const API_URL =
+//   import.meta.env.MODE === "development"
+//     ? import.meta.env.VITE_API_URL
+//     : "/api";
+const API_URL = import.meta.env.VITE_API_URL;
 const WEB3FORMS_API_URL = import.meta.env.VITE_API_URLWEB;
 const WEB3FORMS_ACCESS_KEY = import.meta.env.VITE_API_WEB3FORM;
 // ✅ Async action for submitting the contact form

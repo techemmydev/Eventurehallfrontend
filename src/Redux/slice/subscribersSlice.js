@@ -2,11 +2,11 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
 // ✅ API_URL now properly handles development vs production
-const API_URL =
-  import.meta.env.MODE === "development"
-    ? import.meta.env.VITE_API_URL
-    : "/api";
-
+// const API_URL =
+//   import.meta.env.MODE === "development"
+//     ? import.meta.env.VITE_API_URL
+//     : "/api";
+const API_URL = import.meta.env.VITE_API_URL;
 // ✅ Async action to subscribe a user (expects an object parameter)
 export const subscribeUser = createAsyncThunk(
   "subscribers/subscribe",
